@@ -1,0 +1,45 @@
+<div class="flex">
+    <div class="card cards" style="width: 18rem;" *ngFor="let character of characters">
+        <img class="card-img-top" src="{{character.image}}" alt="{{character.name}}" style="width: 150px;height: 150px">
+        <div class="card-body">
+            <h5 class="card-title">{{character.name}}</h5>
+            <p class="card-text">
+                <span>Id : {{character.id}}</span>&nbsp;&nbsp;<span>Created : {{character.created}}</span>
+            </p>
+        </div>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">
+                <div class="flex space-text">
+                    <div>Status</div>
+                    <div>{{character.status}}</div>
+                </div>
+            </li>
+            <li class="list-group-item">
+                <div class="flex space-text">
+                    <div>Species</div>
+                    <div>{{character.species}}</div>
+                </div>
+            </li>
+            <li class="list-group-item">
+                <div class="flex space-text">
+                    <div>Gender</div>
+                    <div>{{character.gender}}</div>
+                </div>
+            </li>
+            <li class="list-group-item">
+                <div class="flex space-text">
+                    <div>Origin</div>
+                    <div>{{character.origin}}</div>
+                </div>
+            </li>
+            <li class="list-group-item">
+                <div class="flex space-text">
+                    <div>Last Location</div>
+                    <div>{{character.lastLocation}}</div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<ngx-spinner></ngx-spinner>

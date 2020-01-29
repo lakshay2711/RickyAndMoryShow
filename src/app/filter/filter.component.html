@@ -1,0 +1,27 @@
+<div class="filter-heading">
+    <h5>Filters</h5>
+
+    <div>
+        <div>
+            <p>Species</p>
+            <div *ngFor="let species of filters.SPECIES">
+                <input type="checkbox" id="{{species}}" value="{{species}}" (click)="setFilters($event)">&nbsp;
+                <label for="{{species}}">{{species}}</label>
+            </div>
+        </div>
+        <div>
+            <p>GENDER</p>
+            <div *ngFor="let gender of filters.GENDER">
+                <input type="checkbox" id="{{gender}}" value="{{gender}}" (click)="setFilters($event)">&nbsp;
+                <label for="{{gender}}">{{gender}}</label>
+            </div>
+        </div>
+        <div>
+            <p>ORIGIN</p>
+            <div *ngFor="let origin of filters.ORIGIN">
+                <input type="checkbox" id="{{origin}}" value="{{origin}}" (click)="setFilters($event)">&nbsp;
+                <label for="{{origin}}">{{origin}}</label>
+            </div>
+        </div>
+    </div>
+</div>

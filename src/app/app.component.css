@@ -1,0 +1,9 @@
+.flex {
+    display: flex;
+}
+.flex-2 {
+    flex: 2;
+}
+.flex-10 {
+    flex: 10;
+}

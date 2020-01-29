@@ -1,0 +1,10 @@
+.flex {
+    display: flex;
+    margin: 10px;
+}
+.cards {
+    margin: 10px;
+}
+.space-text {
+    justify-content: space-between;
+}

@@ -1,0 +1,10 @@
+<h2>Welcome to Rick And Morty Show</h2>
+
+<div class="mr-20">
+    <label for="sort">Sort By :&nbsp;</label>
+    <select id="sort" [(ngModel)]="sortBy" (change)="onChangeCategory()">
+        <option value="asc" selected>Ascending</option>
+        <option value="des">Descending</option>
+    </select>
+</div>
+<div class="clear"></div>

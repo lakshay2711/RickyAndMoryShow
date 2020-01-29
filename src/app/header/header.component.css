@@ -1,0 +1,10 @@
+h2 {
+    text-align: center;
+}
+.clear {
+    clear: both;
+}
+.mr-20 {
+    text-align: right;
+    margin-right: 30px;
+}
